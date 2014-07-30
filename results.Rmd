@@ -1,8 +1,9 @@
 ---
 title: "Golden Gate -> Tx-Tl"
 output:
+  pdf_document: default
   html_document:
-    fig_width: 10
+#    fig_width: 10
 ---
 
 We tried putting the output of a Golden-Gate assembly reaction directly into a Tx-Tl reaction.
