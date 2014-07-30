@@ -17,10 +17,10 @@ gg.txtl=rbind(gg.txtl.blank, gg.txtl.rep1, gg.txtl.rep2)
 #load plotting library
 require(ggplot2)
 #make ggplot2 draw tings bigger
-theme_set(theme_gray(base_size = 24))
-theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#theme_set(theme_gray(base_size = 24))
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
 #draw plot
-ggplot(gg.txtl,aes(x=Time,y=GFP,colour=Sample,group=Sample)) + 
+gg.txtl.plot=ggplot(gg.txtl,aes(x=Time,y=GFP,colour=Sample,group=Sample)) + 
   geom_line() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   ggtitle("Direct Tx-Tl of Golden-Gate Product")

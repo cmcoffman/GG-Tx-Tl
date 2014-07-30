@@ -1,0 +1,22 @@
+---
+title: "Golden Gate -> Tx-Tl"
+output:
+  html_document:
+    fig_width: 10
+---
+
+We tried putting the output of a Golden-Gate assembly reaction directly into a Tx-Tl reaction.
+
+```{r, echo=FALSE, message=FALSE}
+source("analysis.R")
+```
+
+##Results
+Here is a plot of the GFP emission over time:
+
+```{r, echo=FALSE}
+print(gg.txtl.plot)
+```
+
+##Interpretation
+The blank and 1st rep showed no response over time. The 2nd rep showed a slight increase over time, but the background was high. Maybe its not mixed well?
